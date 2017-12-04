@@ -1,0 +1,40 @@
+**** Tecnologias e Frameworks empregados: MySQL, Eclipse
+
+***** Checkout com o Eclipse *****
+***** Converter para Projeto Maven e Atualizar as dependências pelo atalho Alt + F5 *****
+***** Executar o Projeto no TomCAT **** 
+
+***** Porém, antes de executá-lo, deve-se configurar a conexão com o MySQL conforme descrito à seguir *****
+
+a) Criar o banco "gestormultimidia";
+b) Configurar como CREATE na linha 37 da classe org.gestormultimidia.JPAConfiguration;
+c) nas linhas 27 e 28, setar o Username e Password do banco
+
+d) executar o projeto no TomCat 7 para que o Hibernate crie as tabelas no banco.
+*******************************************
+1) 
+insert into Role values ('ROLE_ADMIN');
+
+*******************************************
+2)
+usuario into Usuario (email, nonme, senha) values ('','','');
+
+
+email  adm@multimidia.org.br
+
+nome  Administrador
+
+senha	$2a$10$lt7pS7Kxxe5JfP.vjLNSyOXP11eHgh7RoPxo5fvvbMCZkCUss2DGu
+		     		letra ó
+
+Observações: essa chave criptográfica representa a senha "123456".  Quando for logar, deverás digitar Email e Senha=123456.
+
+********************************************
+3) 
+insert into Usuario_Role(Usuario_email,roles_nome) values ('adm@multimidia.org.br','ROLE_ADMIN');
+
+********************************************
+
+e) Poderá agora acessar no 
+
+voltar para o UPDATE no JPAConfiguration.

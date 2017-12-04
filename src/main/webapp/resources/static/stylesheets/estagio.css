@@ -1,0 +1,103 @@
+/*UTILIDADES */
+.bw-glyphicon-large {
+	font-size: 18px;
+} 
+ 
+ /*Componentes */
+ 
+ .glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ .glyphicon-cloud-upload:before {
+  content: "\e198";
+}
+ 
+ /*Field Action*/
+ .bw-field-action {
+ 	display: flex;
+ }
+ 
+ .bw-field-action_icon {
+ 	margin: 6px 0 0 5px;
+ }
+ 
+ /* Upload */
+ .bw-upload {
+ 	padding: 15px;
+ 	
+ 	border: 1px dashed #ddd;
+ 	border-radius: 4px;
+ 	background: #fafafa;
+ 	
+ 	text-align: center;
+ }
+ 
+ .bw-upload-form-file {
+ 	display: inline-block;
+ 	vertical-align: middle;
+ 	position: relative;
+ 	overflow: hidden;
+ 	margin-bottom: 1px;
+ }
+ 
+ .bw-upload-form-file > input[type=file] {
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	z-index: 1;
+ 	width: 100%;
+ 	opacity: 0;
+ 	cursor: pointer;
+ 	
+ 	font-size: 500px;
+ 
+ }
+ 
+ /*Tabela Simples */
+ .bw-tabela-simples {
+ 	margin-top: 15px;
+ }
+ 
+ .bw-tabela-simples table tr {
+	 border-bottom-width: 1px;	 
+ }
+ 
+ .bw-tabela-simples table tr td {
+	 border-top: none;
+	 border-bottom: 1px solid #e7eaec;
+	 padding: 10px;
+	 vertical-align: middle;	 
+ }
+ 
+ /* Colunas - Pesquisa de Produtos */
+ .table-col-foto {
+	 min-width: 50px;
+	 width: 50px
+ } 
+ 
+.table-col-titulo {
+	/*min-width: 200px; */
+}
+
+.table-col-descricao {
+	
+	
+}
+
+.table-col-paginas {
+	width: 20px;
+	text-align: center;
+}
+
+.table-col-acoes{
+	width: 80px;
+}
