@@ -1,13 +1,13 @@
 **** Tecnologias e Frameworks empregados: MySQL, Eclipse
 
 ***** Checkout com o Eclipse *****
-***** Converter para Projeto Maven e Atualizar as dependÍncias pelo atalho Alt + F5 *****
+***** Converter para Projeto Maven e Atualizar as depend√™ncias pelo atalho Alt + F5 *****
 ***** Executar o Projeto no TomCAT **** 
 
-***** PorÈm, antes de execut·-lo, deve-se configurar a conex„o com o MySQL conforme descrito ‡ seguir *****
+***** Por√©m, antes de execut√°-lo, deve-se configurar a conex√£o com o MySQL conforme descrito √† seguir *****
 
 a) Criar o banco "gestormultimidia";
-b) Configurar como CREATE na linha 37 da classe org.gestormultimidia.JPAConfiguration;
+b) Configurar como "create" na linha 37 da classe org.gestormultimidia.JPAConfiguration;
 c) nas linhas 27 e 28, setar o Username e Password do banco
 
 d) executar o projeto no TomCat 7 para que o Hibernate crie as tabelas no banco.
@@ -25,9 +25,9 @@ email  adm@multimidia.org.br
 nome  Administrador
 
 senha	$2a$10$lt7pS7Kxxe5JfP.vjLNSyOXP11eHgh7RoPxo5fvvbMCZkCUss2DGu
-		     		letra Û
+		     		letra √≥
 
-ObservaÁıes: essa chave criptogr·fica representa a senha "123456".  Quando for logar, dever·s digitar Email e Senha=123456.
+Observa√ß√µes: essa chave criptogr√°fica representa a senha "123456".  Quando for logar, dever√°s digitar Email e Senha=123456.
 
 ********************************************
 3) 
@@ -35,6 +35,6 @@ insert into Usuario_Role(Usuario_email,roles_nome) values ('adm@multimidia.org.b
 
 ********************************************
 
-e) Poder· agora acessar no 
+e) Poder√° agora acessar fazer o login pelo Navegador.  Adicionar imagens e consultar a listagem de fotos adicionadas.
 
-voltar para o UPDATE no JPAConfiguration.
+f) Alterar para "update" na linha 37 da classe org.gestormultimidia.JPAConfiguration;.
